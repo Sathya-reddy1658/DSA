@@ -102,7 +102,7 @@ void menu()
         break;
     case 4:
         n = search();
-        if (n != -1)
+        if (n!= -1)
         {
             print(n);
         }
@@ -257,6 +257,7 @@ int search()
 void update()
 {
     int id = search();
+    if(id!=-1){
     struct student *stu = allStudents[id];
     printf("\n*****************************************\n");
     printf("*            \033[1;32mUPDATE ENTRY FORM\033[0m          *\n");
@@ -293,7 +294,7 @@ void update()
     printf("\n\033[1;32m*****************************************\033[0m\n");
     printf("\033[1;32m*\033[0m       \033[1;33mStudent Record Updated!\033[0m         \033[1;32m*\033[0m\n");
     printf("\033[1;32m*****************************************\033[0m\n\n");
-}
+}}
 
 void greet()
 {
